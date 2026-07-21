@@ -12,7 +12,6 @@ import 'features/ticket_wallet/presentation/ticket_wallet_viewmodel.dart';
 import 'data/local/hive_service.dart';
 
 /// Main entry point for Delhi Metro App
-/// Production-ready with proper error handling and initialization
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
