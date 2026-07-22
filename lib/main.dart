@@ -1,3 +1,4 @@
+// lib/main.dart
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -20,6 +21,7 @@ void main() async {
     await HiveService.initialize();
 
     // TODO: Initialize Firebase
+    // await Firebase.initializeApp();
 
     runApp(const MetroTrackApp());
   } catch (e) {
@@ -49,14 +51,14 @@ class MetroTrackApp extends StatelessWidget {
     );
   }
 
-  /// App theme with accessibility considerations
+  /// Build app theme with accessibility considerations
   ThemeData _buildTheme() {
     return ThemeData(
       primarySwatch: Colors.blue,
       primaryColor: AppColors.primary,
       scaffoldBackgroundColor: AppColors.background,
       fontFamily: 'Roboto',
-
+      
       // Accessibility: Larger default text sizes
       textTheme: const TextTheme(
         displayLarge: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
@@ -67,7 +69,7 @@ class MetroTrackApp extends StatelessWidget {
         bodyLarge: TextStyle(fontSize: 16, height: 1.5),
         bodyMedium: TextStyle(fontSize: 14, height: 1.5),
       ),
-
+      
       // Elevated button theme
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -83,7 +85,7 @@ class MetroTrackApp extends StatelessWidget {
           ),
         ),
       ),
-
+      
       // Input decoration theme
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
@@ -109,7 +111,7 @@ class MetroTrackApp extends StatelessWidget {
           borderSide: const BorderSide(color: AppColors.error),
         ),
       ),
-
+      
       // Card theme
       cardTheme: CardThemeData(
         elevation: 2,
@@ -118,7 +120,7 @@ class MetroTrackApp extends StatelessWidget {
         ),
         margin: const EdgeInsets.symmetric(vertical: 8),
       ),
-
+      
       // App bar theme
       appBarTheme: const AppBarTheme(
         backgroundColor: AppColors.primary,
@@ -131,7 +133,7 @@ class MetroTrackApp extends StatelessWidget {
           color: Colors.white,
         ),
       ),
-
+      
       // Bottom navigation bar theme
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         selectedItemColor: AppColors.primary,
