@@ -1,4 +1,3 @@
-// lib/main.dart
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -51,7 +50,7 @@ class MetroTrackApp extends StatelessWidget {
     );
   }
 
-  /// Build app theme with accessibility considerations
+  /// App theme with accessibility considerations
   ThemeData _buildTheme() {
     return ThemeData(
       primarySwatch: Colors.blue,
@@ -113,7 +112,7 @@ class MetroTrackApp extends StatelessWidget {
       ),
 
       // Card theme
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         elevation: 2,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
