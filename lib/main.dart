@@ -20,7 +20,6 @@ void main() async {
     await HiveService.initialize();
 
     // TODO: Initialize Firebase
-    // await Firebase.initializeApp();
 
     runApp(const MetroTrackApp());
   } catch (e) {
