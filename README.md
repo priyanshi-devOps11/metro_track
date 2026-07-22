@@ -297,7 +297,7 @@ MIT License - Free for educational and commercial use
 
 For issues and questions:
 - Create GitHub issue
-- Email: support@metrotrack.com
+- Email: srivastavapriyanshi8081@gmail.com
 
 ---
 
